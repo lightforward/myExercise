@@ -1,0 +1,16 @@
+# 注：bootstrap.yml文件优先加载与application.yml文件，
+# 且bootstrap.yml文件中的属性值不会被其他配置文件值覆盖，故一般将应用程序名称、
+# 应用程序profile和连接到Spring Cloud Config服务器的URI放在bootstrap.yml文件中
+
+spring:
+  application:
+    # 设置应用程序的名称
+    name: exercise-user
+  # 设置激活的环境，dev 将加载study-dev.yml文件
+  profiles:
+    active: dev
+  # config server 配置
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8000

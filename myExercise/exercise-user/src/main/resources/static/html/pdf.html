@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pdf,word嵌入到网页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <style type="text/css">
+    </style>
+</head>
+<body>
+
+<!--word、ppt、xls文件实现在线预览的方式比较简单可以直接通过调用微软的在线预览功能实现 (预览前提：资源必须是公共可访问的)-->
+<!--<iframe src='eqpt.doc' style="width:100%; height:1000px;"></iframe>-->
+
+
+
+
+<!--使用jquery.media.js实现pdf在线预览(Ie中可以在本地打开, 在网页打开需要安装Acrobat Reader 软件)-->
+<div id="handout_wrap_inner" style="width:100%; height:1000px;"></div>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.media.js"></script>
+<script>
+    $('#handout_wrap_inner').media({
+        width: '100%',
+        height: '1000px%',
+        autoplay: false,
+        src: 'git.pdf'
+    });
+</script>
+
+
+
+
+<!-- PDFObject不支持IE-->
+<!--<div id="pdf_viewer" style="width:100%; height:1000px;"></div>-->
+<!--<script type="text/javascript" src="../js/pdfobject.min.js"></script>-->
+<!-- <script>-->
+<!--PDFObject.embed("git.pdf", '#pdf_viewer');-->
+<!--</script>-->
+
+</body>
+</html>

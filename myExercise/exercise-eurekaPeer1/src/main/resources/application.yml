@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: exercise-eureka-peer1
+    profiles: peer1
+#  security:
+#    user:
+#      name: root         # 用户名
+#      password: 123456   # 密码
+
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    serviceUrl:
+      defaultZone: http://peer2:8762/eureka/
+    register-with-eureka: false
+    fetch-registry: false

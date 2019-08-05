@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/exercise-config/exercise-config.iml" filepath="$PROJECT_DIR$/exercise-config/exercise-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercise-eurekaPeer1/exercise-eurekaPeer1.iml" filepath="$PROJECT_DIR$/exercise-eurekaPeer1/exercise-eurekaPeer1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercise-eurekaPeer2/exercise-eurekaPeer2.iml" filepath="$PROJECT_DIR$/exercise-eurekaPeer2/exercise-eurekaPeer2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercise-product/exercise-product.iml" filepath="$PROJECT_DIR$/exercise-product/exercise-product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercise-user/exercise-user.iml" filepath="$PROJECT_DIR$/exercise-user/exercise-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercise-zuul/exercise-zuul.iml" filepath="$PROJECT_DIR$/exercise-zuul/exercise-zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/myExercise.iml" filepath="$PROJECT_DIR$/.idea/myExercise.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="exercise-config" />
+        <module name="exercise-eureka" />
+        <module name="exercise-eurekaPeer1" />
+        <module name="exercise-eurekaPeer2" />
+        <module name="exercise-product" />
+        <module name="exercise-user" />
+        <module name="exercise-zuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="exercise-config" target="1.8" />
+      <module name="exercise-eureka" target="1.8" />
+      <module name="exercise-eurekaPeer1" target="1.8" />
+      <module name="exercise-eurekaPeer2" target="1.8" />
+      <module name="exercise-product" target="1.8" />
+      <module name="exercise-user" target="1.8" />
+      <module name="exercise-zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf-8" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="exercise-config" options="" />
+      <module name="exercise-eureka" options="" />
+      <module name="exercise-eurekaPeer1" options="" />
+      <module name="exercise-eurekaPeer2" options="" />
+      <module name="exercise-product" options="" />
+      <module name="exercise-user" options="" />
+      <module name="exercise-zuul" options="" />
+    </option>
+  </component>
+</project>
