@@ -11,7 +11,7 @@
     <groupId>com.example</groupId>
     <artifactId>exercise-eurekaPeer1</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>exercise-eureka</name>
+    <name>exercise-eurekaPeer1</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
