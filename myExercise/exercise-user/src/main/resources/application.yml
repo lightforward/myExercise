@@ -6,6 +6,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://peer1:8761/eureka/
+  instance:
+    prefer-ip-address: true
 #  instance:
 #    prefer-ip-address: true    #访问路径可以显示IP地址
 
@@ -14,9 +16,8 @@ spring:
     name: exercise-user
   datasource:
     username: root
-    password: root
-    url: jdbc:mysql://192.190.30.116:3306/exercise?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
-
+    password: 123456
+    url: jdbc:mysql://localhost:3306/exercise?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
 #mybatis配置
 mybatis:
   mapperLocations: classpath:mapper/*.xml
