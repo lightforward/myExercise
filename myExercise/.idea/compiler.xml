@@ -32,7 +32,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf-8" />
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="exercise-config" options="" />
+      <module name="exercise-config" options="-parameters" />
       <module name="exercise-eureka" options="" />
       <module name="exercise-eurekaPeer1" options="-parameters" />
       <module name="exercise-eurekaPeer2" options="-parameters" />
