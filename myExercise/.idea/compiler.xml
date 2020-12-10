@@ -6,13 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="exercise-config" />
-        <module name="exercise-eureka" />
-        <module name="exercise-eurekaPeer1" />
         <module name="exercise-eurekaPeer2" />
-        <module name="exercise-product" />
-        <module name="exercise-user" />
+        <module name="exercise-eurekaPeer1" />
+        <module name="exercise-config" />
         <module name="exercise-zuul" />
+        <module name="exerciseConfig" />
+        <module name="exercise-product" />
+        <module name="myExercise" />
+        <module name="exercise-eureka" />
+        <module name="exercise-user" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,6 +25,8 @@
       <module name="exercise-product" target="1.8" />
       <module name="exercise-user" target="1.8" />
       <module name="exercise-zuul" target="1.8" />
+      <module name="exerciseConfig" target="1.8" />
+      <module name="myExercise" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -30,11 +34,13 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="exercise-config" options="" />
       <module name="exercise-eureka" options="" />
-      <module name="exercise-eurekaPeer1" options="" />
-      <module name="exercise-eurekaPeer2" options="" />
-      <module name="exercise-product" options="" />
-      <module name="exercise-user" options="" />
-      <module name="exercise-zuul" options="" />
+      <module name="exercise-eurekaPeer1" options="-parameters" />
+      <module name="exercise-eurekaPeer2" options="-parameters" />
+      <module name="exercise-product" options="-parameters" />
+      <module name="exercise-user" options="-parameters" />
+      <module name="exercise-zuul" options="-parameters" />
+      <module name="exerciseConfig" options="-parameters" />
+      <module name="myExercise" options="" />
     </option>
   </component>
 </project>
