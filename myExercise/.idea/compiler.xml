@@ -8,11 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="exercise-eurekaPeer2" />
         <module name="exercise-eurekaPeer1" />
-        <module name="exercise-config" />
         <module name="exercise-zuul" />
+        <module name="exercise-config" />
         <module name="exerciseConfig" />
         <module name="exercise-product" />
-        <module name="myExercise" />
         <module name="exercise-eureka" />
         <module name="exercise-user" />
       </profile>
@@ -40,7 +39,7 @@
       <module name="exercise-user" options="-parameters" />
       <module name="exercise-zuul" options="-parameters" />
       <module name="exerciseConfig" options="-parameters" />
-      <module name="myExercise" options="" />
+      <module name="myExercise" options="-parameters" />
     </option>
   </component>
 </project>
