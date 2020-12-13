@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="JavaScriptSettings">
-    <option name="languageLevel" value="ES6" />
-  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/exercise-eureka/pom.xml" />
-        <option value="$PROJECT_DIR$/exercise-product/pom.xml" />
-        <option value="$PROJECT_DIR$/exercise-user/pom.xml" />
-        <option value="$PROJECT_DIR$/exercise-eurekaPerr2/pom.xml" />
-        <option value="$PROJECT_DIR$/exercise-eurekaPerr1/pom.xml" />
-        <option value="$PROJECT_DIR$/exercise-eurekaPeer1/pom.xml" />
-        <option value="$PROJECT_DIR$/exercise-eurekaPeer2/pom.xml" />
-        <option value="$PROJECT_DIR$/exercise-zuul/pom.xml" />
-        <option value="$PROJECT_DIR$/exercise-config/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>

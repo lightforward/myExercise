@@ -8,8 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/exercise-product/exercise-product.iml" filepath="$PROJECT_DIR$/exercise-product/exercise-product.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercise-user/exercise-user.iml" filepath="$PROJECT_DIR$/exercise-user/exercise-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercise-zuul/exercise-zuul.iml" filepath="$PROJECT_DIR$/exercise-zuul/exercise-zuul.iml" />
-      <module fileurl="file://$PROJECT_DIR$/exercise-config/exerciseConfig.iml" filepath="$PROJECT_DIR$/exercise-config/exerciseConfig.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/myExercise.iml" filepath="$PROJECT_DIR$/.idea/myExercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myExercise.iml" filepath="$PROJECT_DIR$/myExercise.iml" />
     </modules>
   </component>
 </project>
