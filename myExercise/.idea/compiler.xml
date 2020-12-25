@@ -9,8 +9,8 @@
         <module name="exercise-eurekaPeer2" />
         <module name="exercise-product" />
         <module name="exercise-eurekaPeer1" />
-        <module name="exercise-config" />
         <module name="exercise-zuul" />
+        <module name="exercise-config" />
         <module name="exercise-user" />
       </profile>
     </annotationProcessing>
