@@ -51,12 +51,14 @@ public class MybatisPlusGenerator {
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);
         strategy.setEntityLombokModel(true);
         strategy.setRestControllerStyle(true);
+        // 生成类需要继承的父类
         strategy.setSuperEntityClass("com.baomidou.mybatisplus.extension.activerecord.Model");
 //        strategy.setSuperControllerClass("com.baomidou.demo.TestController");
 //        strategy.setSuperServiceClass("com.baomidou.demo.TestService");
 //        strategy.setSuperServiceImplClass("com.baomidou.demo.TestServiceImpl");
 //        strategy.setSuperMapperClass("com.baomidou.demo.TestMapper");
-        strategy.setInclude(new String[]{"sp_check_notebook"}); // 需要生成的表
+        // 需要生成的表
+        strategy.setInclude(new String[]{"sp_check_notebook"});
 
         // 4.生成文件所在包配置：
         PackageConfig pc = new PackageConfig();
@@ -81,7 +83,8 @@ public class MybatisPlusGenerator {
         focList.add(new FileOutConfig("/templates/mapper.xml.vm") {
             @Override
             public String outputFile(TableInfo tableInfo) {
-                return projectPath + "/src/main/java/com/example" + tableInfo.getEntityName() + ".xml";
+                // XML生成路径
+                return projectPath + "/src/main/java/com/example/mapper/" + tableInfo.getEntityName() + "Mapper.xml";
             }
         });
         cfg.setFileOutConfigList(focList);
