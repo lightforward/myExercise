@@ -13,7 +13,7 @@ spring:
   application:
     name: exercise-product    #全部小写，注册于eureka server上的服务名称，不写名称显示为UNKNOW
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
+    driverClassName: com.mysql.cj.jdbc.Driver
     username: root
     password: 123456
     url: jdbc:mysql://localhost:3306/exercise?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
@@ -23,7 +23,7 @@ mybatis-plus:
     map-underscore-to-camel-case: true
     auto-mapping-behavior: full
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-  mapper-locations: classpath*:mapper/**/*Mapper.xml
+  mapper-locations: classpath*:mybatis-mappers/*Mapper.xml
   global-config:
     # 逻辑删除配置
     db-config:

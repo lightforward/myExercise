@@ -23,10 +23,10 @@ public class MybatisPlusGenerator {
         // 1.配置数据源：
         DataSourceConfig dsc = new DataSourceConfig();
         dsc.setDbType(DbType.MYSQL);
-        dsc.setUrl("jdbc:mysql://192.190.30.116:3306/tmc_db?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true");
-        dsc.setDriverName("com.mysql.jdbc.Driver");
+        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/boot_backend?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true");
+        dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");
-        dsc.setPassword("root");
+        dsc.setPassword("123456");
 
         // 2.设置一些全局的配置：
         GlobalConfig gc = new GlobalConfig();
@@ -58,7 +58,7 @@ public class MybatisPlusGenerator {
 //        strategy.setSuperServiceImplClass("com.baomidou.demo.TestServiceImpl");
 //        strategy.setSuperMapperClass("com.baomidou.demo.TestMapper");
         // 需要生成的表
-        strategy.setInclude(new String[]{"sp_check_notebook"});
+        strategy.setInclude(new String[]{"mz_dept"});
 
         // 4.生成文件所在包配置：
         PackageConfig pc = new PackageConfig();
