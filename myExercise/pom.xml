@@ -65,6 +65,12 @@
         <!-- 添加Mybatis-plus依赖 -->
         <dependency>
             <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus</artifactId>
+            <version>3.4.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>3.2.0</version>
         </dependency>
