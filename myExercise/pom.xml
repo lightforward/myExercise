@@ -114,7 +114,7 @@
             <optional>true</optional>
         </dependency>
 
-        <!--Thymeleaf模板配置-->
+        <!-- Thymeleaf模板配置 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
