@@ -7,18 +7,18 @@ eureka:
     serviceUrl:
       defaultZone: http://peer1:8761/eureka/
   instance:
-    prefer-ip-address: true
-#  instance:
-#    prefer-ip-address: true    #访问路径可以显示IP地址
+    prefer-ip-address: true    #访问路径可以显示IP地址
 
 spring:
+  thymeleaf:
+    cache: false
   application:
     name: exercise-user
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     username: root
-    password: 123456
-    url: jdbc:mysql://localhost:3306/exercise?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    password: root
+    url: jdbc:mysql://192.190.20.196:3306/tmc_db?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
 
 mybatis-plus:
   configuration:
