@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * 描述：shiro无权限，不跳转到指定页面
+ * 描述：shiro无权限，跳转到指定页面
  *
  * @author wns
  * @create 2021年1月5日12:01:23
