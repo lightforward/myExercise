@@ -4,6 +4,7 @@ import com.exercise.model.User;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.shiro.subject.Subject;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,13 +24,16 @@ import java.util.Map;
 @Slf4j
 public class LoginController {
 
+    //--------------------------------------------------SpringBoot Demo方法----------------------------------------------------------------
+
     /**
      * 用户登录
+     * Demo账号, 密码写死
      *
      * @param request
      * @return
      */
-    @RequestMapping(value = "loginUser",method= RequestMethod.POST)
+    @RequestMapping(value = "loginUser", method = RequestMethod.POST)
     public Object loginUser(HttpServletRequest request) {
         log.info("logback 访问:登录接口");
         String userName = request.getParameter("userName");
@@ -43,18 +47,18 @@ public class LoginController {
         user.setUserName("admin");
         user.setPassWord("123456");
         Map<Object, Object> result = new HashMap<Object, Object>();
-        if(user != null) {
+        if (user != null) {
             result.put("resultCode", 200);
             result.put("msg", "登录成功");
             setSession(request, user);
-        }else {
+        } else {
             result.put("resultCode", 500);
             result.put("msg", "用户名或者密码错误");
         }
         return result;
     }
 
-    public void setSession(HttpServletRequest request, User loginUser){
+    public void setSession(HttpServletRequest request, User loginUser) {
         //使用request对象的getSession()获取session，如果session不存在则创建一个
         HttpSession session = request.getSession();
         //将数据存储到session中
@@ -62,6 +66,14 @@ public class LoginController {
         session.setMaxInactiveInterval(60 * 20); //单位秒
     }
 
+    //--------------------------------------------------Shiro Demo方法----------------------------------------------------------------
+
+    /**
+     * 登录认证Demo
+     *
+     * @param request
+     * @return
+     */
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     @ResponseBody
     public Object login(HttpServletRequest request) {
@@ -94,6 +106,18 @@ public class LoginController {
             token.clear();
             return "登录失败";
         }
+    }
+
+    /**
+     * 注解权限Demo
+     *
+     * @return
+     */
+    @RequiresPermissions("user:show")
+    @ResponseBody
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    public String list() {
+        return "这是列表信息";
     }
 
 }
