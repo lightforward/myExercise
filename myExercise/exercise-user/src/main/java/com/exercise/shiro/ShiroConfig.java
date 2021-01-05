@@ -66,7 +66,7 @@ public class ShiroConfig {
         return customRealm;
     }
 
-    //-----------------------------------------利用注解配置权限-----------------------------------------------------------
+    //-----------------------------------------开启Shiro注解配置权限-----------------------------------------------------------
 
     @Bean
     public LifecycleBeanPostProcessor lifecycleBeanPostProcessor() {
