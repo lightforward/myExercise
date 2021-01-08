@@ -19,10 +19,10 @@ import java.util.Map;
  *
  * ShiroConfig
  */
-@Configuration
+//@Configuration
 public class ShiroConfig {
 
-    @Bean(name = "shiroFilter")
+    //@Bean(name = "shiroFilter")
     public ShiroFilterFactoryBean shiroFilter(SecurityManager securityManager) {
         ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
         shiroFilterFactoryBean.setSecurityManager(securityManager);
@@ -30,11 +30,10 @@ public class ShiroConfig {
         shiroFilterFactoryBean.setUnauthorizedUrl("/notRole");
         Map<String, String> filterChainDefinitionMap = new LinkedHashMap<>();
         // <!-- authc:所有url都必须认证通过才可以访问; anon:所有url都都可以匿名访问-->
-        filterChainDefinitionMap.put("/webjars/**", "anon");
-        filterChainDefinitionMap.put("/", "anon");
-        filterChainDefinitionMap.put("/front/**", "anon");
-        filterChainDefinitionMap.put("/api/**", "anon");
-        filterChainDefinitionMap.put("/login/*", "anon");
+//        filterChainDefinitionMap.put("/webjars/**", "anon");
+//        filterChainDefinitionMap.put("/", "anon");
+//        filterChainDefinitionMap.put("/front/**", "anon");
+//        filterChainDefinitionMap.put("/api/**", "anon");
 
         // 前端静态资源
         filterChainDefinitionMap.put("/css/*", "anon");
@@ -44,8 +43,12 @@ public class ShiroConfig {
         filterChainDefinitionMap.put("/js/*", "anon");
         filterChainDefinitionMap.put("/jsLibrary/*", "anon");
 
-        filterChainDefinitionMap.put("/admin/**", "authc");
-        filterChainDefinitionMap.put("/user/**", "authc");
+        // 后台接口
+        filterChainDefinitionMap.put("/login/*", "authc");
+        filterChainDefinitionMap.put("/userRibbon/*", "authc");
+        filterChainDefinitionMap.put("/userFeign/*", "authc");
+//        filterChainDefinitionMap.put("/admin/**", "authc");
+//        filterChainDefinitionMap.put("/user/**", "authc");
         //主要这行代码必须放在所有权限设置的最后，不然会导致所有 url 都被拦截 剩余的都需要认证
         filterChainDefinitionMap.put("/**", "authc");
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);

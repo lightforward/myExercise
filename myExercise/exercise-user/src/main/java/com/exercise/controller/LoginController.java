@@ -45,7 +45,7 @@ public class LoginController {
         User user = new User();
         user.setId(1L);
         user.setUserName("admin");
-        user.setPassWord("123456");
+        user.setPassWord("1");
         Map<Object, Object> result = new HashMap<Object, Object>();
         if (user != null) {
             result.put("resultCode", 200);
