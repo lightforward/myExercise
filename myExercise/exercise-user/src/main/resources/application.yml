@@ -18,7 +18,21 @@ spring:
     driverClassName: com.mysql.cj.jdbc.Driver
     username: root
     password: root
-    url: jdbc:mysql://192.190.20.196:3306/tmc_db?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    url: jdbc:mysql://192.190.50.187:3306/tmc_db?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+
+  activemq:
+    # broker地址，默认端口是61616
+    broker-url: tcp://192.190.50.187:61616
+    # 信任所有的包，这个配置是为了支持发送对象消息
+    packages:
+      trust-all: true
+    # ActiveMQ的用户名
+    user: admin
+    # ActiveMQ的密码
+    password: admin
+    # queue和topic不能同时使用，使用topic的时候，把下面这行解除注释
+    jms:
+      pub-sub-domain: true
 
 mybatis-plus:
   configuration:
