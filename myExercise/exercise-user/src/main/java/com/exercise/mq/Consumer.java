@@ -2,6 +2,7 @@ package com.exercise.mq;
 
 import com.exercise.model.Phone;
 import org.springframework.jms.annotation.JmsListener;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * <p>
  * 消息消费者
  */
-@RestController
+@Component
 public class Consumer {
 
     // 监听和读取queue消息

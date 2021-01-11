@@ -17,8 +17,8 @@ spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     username: root
-    password: 123456
-    url: jdbc:mysql://127.0.0.1:3306/boot_backend?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=UTC
+    password: root
+    url: jdbc:mysql://192.190.30.116:3306/tmc_db?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=UTC
 
   activemq:
     # broker地址，默认端口是61616
@@ -31,8 +31,8 @@ spring:
     # ActiveMQ的密码
     password: admin
     # queue和topic不能同时使用，使用topic的时候，把下面这行解除注释
-    jms:
-      pub-sub-domain: true
+  jms:
+    pub-sub-domain: true
 
 mybatis-plus:
   configuration:
