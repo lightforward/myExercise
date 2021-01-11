@@ -3,7 +3,6 @@ package com.exercise.mq;
 import com.exercise.model.Phone;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Author: 王能顺
