@@ -19,7 +19,7 @@ import java.util.Map;
  *
  * ShiroConfig
  */
-//@Configuration
+@Configuration
 public class ShiroConfig {
 
     //@Bean(name = "shiroFilter")
