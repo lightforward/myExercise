@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  * @Author: 王能顺
  * @Date: 2021-1-8 17:22:26
  * <p>
- *  消息消费者
+ * 消息消费者
  */
 @Component
 public class Consumer {
